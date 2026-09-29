@@ -10,7 +10,9 @@ from .models import UserAnswers
 from .diagnostic import diagnose
 from .storage import Storage
 from .ai import explain_with_ai
-
+import logging
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
 load_dotenv()
 
 class Form(StatesGroup):
