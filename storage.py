@@ -1,6 +1,6 @@
 import sqlite3
 from contextlib import contextmanager
-from .models import UserAnswers
+from models import UserAnswers
 
 DB_PATH = "users_data.db"
 
