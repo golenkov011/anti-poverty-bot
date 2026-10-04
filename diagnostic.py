@@ -1,6 +1,6 @@
 from dataclasses import dataclass
 from typing import List
-from .models import UserAnswers
+from models import UserAnswers
 
 @dataclass
 class Finding:
