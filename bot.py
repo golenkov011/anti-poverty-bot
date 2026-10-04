@@ -4,9 +4,9 @@ from aiogram.types import Message, ReplyKeyboardMarkup, KeyboardButton
 from aiogram.filters import Command
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
-from .storage import init_db, get_user, save_user
-from .diagnostic import diagnose
-from .models import UserAnswers
+from storage import init_db, get_user, save_user
+from diagnostic import diagnose
+from models import UserAnswers
 
 logging.basicConfig(level=logging.INFO)
 router = Router()
